@@ -147,3 +147,5 @@ debes usar la barra invertida antes de esa comilla como el " Let\'s "          *
 // Nosotros podemos usar lo mismo \n para salto de linea, \t para tabular, \b para quitar un espacio  anterior
 // cuando haces un string no puedes usar enter para un salto de linea
 
+let contadorLetra="murcielago";
+console.log(contadorLetra.length);
