@@ -133,7 +133,7 @@ function mostrar(){
   document.getElementById("seleccionable").innerHTML=Date();
   
 }
-
+/*
 //                      STRINGS
 //--- Primer ejemplo
 let variable=`pedro`;
@@ -141,11 +141,48 @@ let string =`Cadena de texto ${variable}`;
 //-----Segundo ejemplo
 
 let string2='let\'s do it'/* si deseas usar una comilla al centro como para el ingles
-debes usar la barra invertida antes de esa comilla como el " Let\'s "          */
+debes usar la barra invertida antes de esa comilla como el " Let\'s "          
 
 //-----Tercer ejemplo
 // Nosotros podemos usar lo mismo \n para salto de linea, \t para tabular, \b para quitar un espacio  anterior
 // cuando haces un string no puedes usar enter para un salto de linea
 
-let contadorLetra="murcielago";
-console.log(contadorLetra.length);
+let contadorLetra="murcielago";//se considera que es un array de caracteres, tmabien se cuenta espacios
+console.log(contadorLetra.length);//10----- el \b,\n\t   se cuenta como un espacio mas seria 11
+
+
+///    METODOS DE STRING 
+   //slice(comienzo,final) se cuenta desde 0 a 1 antes del valor final
+   let texto="0123456789";
+   let resultado=texto.slice(4,7);//456
+   resultado= texto.substring(4,7);//456
+   console.log(resultado);
+
+    //replace("palabra a buscar","nuevo valor de ese contenido")
+    let texto2="La educacion es importante en el Peru";
+    resultado=texto2.replace("Peru","en el Mundo");//aqui se cambia a Peru, por "en el Mundo"
+    resultado=texto2.toUpperCase();//convierte todo a MAYUSCULA
+    //resultado=texto2.toLowerCase();//convierte todo a MINUSCULA
+let texto4="nada podemos";
+let texto5=" Pero lo intentamos";
+resultado=texto4+texto5;// es una forma de contatenar pero hay otra
+resultado = texto4.concat(texto5).toUpperCase().slice(4,12);//se puede usar varios metodos
+    console.log(resultado);
+
+    resultado =resultado.trim();// hay trimStart() para el epacio de inicion o trinEnd() para el espacio del final
+    console.log(resultado);
+
+    //USO DEL charAt(posicion);se puede decir que es lo mismo texto[posicion];
+    resultado=texto5.charAt(3);
+
+    */
+
+    const texto="Este texto te lo manda el backend. Este texto es importante. Dividi el texto";
+    
+    const resultado=texto.split(".");// si el split esta vacio, lo separa letra por letra
+    // el resultado se vuelve en una variable que contiene un array 
+    //este array contiene valores que esta separado por puntos por ejemplo 
+    //cada string que esta antes de un punto(.), es guardada en una posicion 
+    //puede ser por un punto o por cualquier valor
+    console.log(resultado);
+
