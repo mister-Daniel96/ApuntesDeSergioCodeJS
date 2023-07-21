@@ -1,0 +1,36 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product1 {
+    width: 300px;
+    height: 400px;
+    margin: 10px auto;
+    background-color: brown;
+    padding: 40px 20px;
+    
+
+}
+
+img {
+    display: block;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.characters {
+    margin-top: 20px;
+    color:  white;
+    text-align: center;
+}
+.characters  h4{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
