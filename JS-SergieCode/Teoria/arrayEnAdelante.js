@@ -1,4 +1,4 @@
-// Array
+// ==========================  ARRAY   ========================
 /*const array = ["Curso HTML", "Curso CSS", "Curso JS"];
         const array2= new Array(5);//creamos un array vacio con 5 espacios vacios
         array2[0]='Curso de HTML';
@@ -42,6 +42,23 @@
                 const element = resultado[index];
                 console.log(element.nombre);
             }*/
+
+            //==========   METODOS DEL ARRAY   =================00
+                
+            const arreglo=['David','Juan','Alonso'];
+            console.log(arreglo);
+            //   PUSH   --> agrega un elemento al final-- modificando el arreglo
+            arreglo.push('Carlos');console.log(arreglo);
+            //   UNSHIFT   --> agrega un elemento al inicio-- modificando el arreglo-corriendo posiciones
+            arreglo.unshift('Jonas');console.log(arreglo);
+            //   POP   --> elimina el elemento final -- modificando el arreglo y me devuelve el elemento eliminado
+            arreglo.pop();console.log(arreglo);
+            //   SHIFT   --> elimina un elemento del inicio-- modificando el arreglo-corriendo posiciones
+                            // y  me devuelve el elemento eliminado 
+            arreglo.shift();console.log(arreglo);
+
+
+
 //=========================    DATE  ==========================
 
 
